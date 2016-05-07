@@ -1,0 +1,30 @@
+<snippet>
+    <content>
+<![CDATA[
+describe('${1:Ext.define name...}', function() {
+    var view;
+
+    beforeAll(function(done) {
+        Ext.require([
+            '${2:Add requires...}'
+        ], done);
+    });
+
+    beforeEach(function() {
+        view = Ext.create('$1');
+    });
+
+    afterEach(function() {
+        Ext.destroy(view);
+    });
+
+    it('should have an alias of $3', function() {
+        expect(view.getXType()).toEqual('$3');
+    });
+
+});]]>
+    </content>
+    <tabTrigger><![CDATA[quack]]></tabTrigger>
+    <scope>source.js</scope>
+    <description>Saff's 'Quacky' Snippet</description>
+</snippet>
