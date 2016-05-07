@@ -6,8 +6,8 @@ describe('${1:Ext.define name...}', function() {
 
     beforeAll(function(done) {
         Ext.require([
-            '${2:Add requires...}'
-        ], done);
+       		'$1'
+	 ], done);
     });
 
     beforeEach(function() {
